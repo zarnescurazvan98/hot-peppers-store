@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Habanero Pepper",
+    "description": "Known for its heat and fruity flavor.",
+    "price": 2.99,
+    "image": "https://example.com/images/habanero.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jalapeño Pepper",
+    "description": "A mild pepper with a great taste.",
+    "price": 1.99,
+    "image": "https://example.com/images/jalapeno.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Serrano Pepper",
+    "description": "Perfect for salsas and sauces.",
+    "price": 2.49,
+    "image": "https://example.com/images/serrano.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ghost Pepper",
+    "description": "One of the hottest peppers in the world.",
+    "price": 3.99,
+    "image": "https://example.com/images/ghost.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bell Pepper",
+    "description": "Sweet and crunchy, perfect for salads.",
+    "price": 1.49,
+    "image": "https://example.com/images/bell.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Carolina Reaper",
+    "description": "The hottest pepper in the world.",
+    "price": 4.99,
+    "image": "https://example.com/images/reaper.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Poblano Pepper",
+    "description": "Mild with a rich flavor, great for stuffing.",
+    "price": 2.29,
+    "image": "https://example.com/images/poblano.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Anaheim Pepper",
+    "description": "Mild and sweet, great for roasting.",
+    "price": 1.89,
+    "image": "https://example.com/images/anaheim.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Chipotle Pepper",
+    "description": "Smoked jalapeño with a unique flavor.",
+    "price": 2.99,
+    "image": "https://example.com/images/chipotle.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Thai Chili Pepper",
+    "description": "Small but packs a lot of heat.",
+    "price": 2.49,
+    "image": "https://example.com/images/thai-chili.jpg"
+  }
+]

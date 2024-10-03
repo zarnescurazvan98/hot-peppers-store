@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     addToCart() {
-      // Logic to add to cart
+      this.$store.dispatch('addProduct', this.product);  // Dispatch the addProduct action to the Vuex store
       console.log(`Added ${this.product.name} to cart!`);
     },
   },

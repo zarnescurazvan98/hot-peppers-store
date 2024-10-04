@@ -1,15 +1,18 @@
 <template>
-  <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+  <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col h-full">
     <img :src="product.image" alt="Product Image" class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h2 class="text-lg font-bold">{{ product.name }}</h2>
-      <p class="text-gray-700">{{ product.description }}</p>
-      <p class="text-xl font-semibold mt-2">${{ product.price.toFixed(2) }}</p>
 
-      <!-- Scoville Rating -->
-      <p class="text-sm text-gray-600 mt-2">Scoville Rating: {{ product.scovilleScale.toLocaleString() }} SHU</p>
+    <div class="p-4 flex flex-col flex-grow">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold">{{ product.name }}</h2>
+        <p class="text-gray-700 mt-2">{{ product.description }}</p>
+      </div>
 
-      <!-- Quantity Selector -->
+      <div class="mt-2">
+        <p class="text-xl font-semibold">${{ product.price.toFixed(2) }}</p>
+        <p class="text-sm text-gray-600">Scoville Rating: {{ product.scovilleScale.toLocaleString() }} SHU</p>
+      </div>
+
       <div class="mt-4">
         <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity:</label>
         <select v-model="selectedQuantity" id="quantity" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500">

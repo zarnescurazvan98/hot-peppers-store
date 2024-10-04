@@ -6,9 +6,9 @@ export default {
         ADD_TO_CART(state, product) {
             const existingProduct = state.items.find(item => item.id === product.id);
             if (existingProduct) {
-                existingProduct.quantity += 1;  // Increment quantity if product already exists in the cart
+                existingProduct.quantity += product.quantity;  // Increment quantity by the selected amount
             } else {
-                state.items.push({ ...product, quantity: 1 });  // Add new product with quantity 1
+                state.items.push({ ...product, quantity: product.quantity });  // Add new product with the selected quantity
             }
         },
         REMOVE_FROM_CART(state, productId) {

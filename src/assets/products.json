@@ -1,72 +1,170 @@
 [
   {
     "id": 1,
-    "name": "Habanero Pepper",
-    "description": "Known for its heat and fruity flavor.",
-    "price": 2.99,
-    "image": "https://example.com/images/habanero.jpg"
+    "name": "Aji Charapita Pepper",
+    "description": "A tiny, fiery pepper known as the 'mother of all peppers' in Peru, used for its intense heat and citrusy flavor.",
+    "price": 12.99,
+    "scovilleScale": 30000,
+    "image": "/images/peppers/aji_charapita.jpg"
   },
   {
     "id": 2,
-    "name": "Jalapeño Pepper",
-    "description": "A mild pepper with a great taste.",
-    "price": 1.99,
-    "image": "https://example.com/images/jalapeno.jpg"
+    "name": "Aji Fantasy Pepper",
+    "description": "A mild, fruity pepper with a sweet and citrusy flavor, commonly grown in Finland.",
+    "price": 9.99,
+    "scovilleScale": 5000,
+    "image": "/images/peppers/aji_fantasy.jpg"
   },
   {
     "id": 3,
-    "name": "Serrano Pepper",
-    "description": "Perfect for salsas and sauces.",
-    "price": 2.49,
-    "image": "https://example.com/images/serrano.jpg"
+    "name": "Black Panther Orange Pepper",
+    "description": "A rare, visually striking pepper with a sweet, fruity flavor and medium heat.",
+    "price": 14.99,
+    "scovilleScale": 50000,
+    "image": "/images/peppers/black_panther_orange.jpg"
   },
   {
     "id": 4,
-    "name": "Ghost Pepper",
-    "description": "One of the hottest peppers in the world.",
-    "price": 3.99,
-    "image": "https://example.com/images/ghost.jpg"
+    "name": "Buena Mulata Pepper",
+    "description": "A beautiful, vibrant purple cayenne-type pepper that turns red when mature, with a medium heat.",
+    "price": 8.99,
+    "scovilleScale": 30000,
+    "image": "/images/peppers/buena_mulata.jpg"
   },
   {
     "id": 5,
-    "name": "Bell Pepper",
-    "description": "Sweet and crunchy, perfect for salads.",
-    "price": 1.49,
-    "image": "https://example.com/images/bell.jpg"
+    "name": "Candy Cane Pepper",
+    "description": "A variegated sweet pepper with stripes, providing a crunchy, sweet taste.",
+    "price": 7.99,
+    "scovilleScale": 5000,
+    "image": "/images/peppers/candy_cane.jpg"
   },
   {
     "id": 6,
-    "name": "Carolina Reaper",
-    "description": "The hottest pepper in the world.",
-    "price": 4.99,
-    "image": "https://example.com/images/reaper.jpg"
+    "name": "Death Spiral Pepper",
+    "description": "A wickedly hot pepper with a bumpy texture and extreme heat, originating from the UK.",
+    "price": 15.99,
+    "scovilleScale": 1500000,
+    "image": "/images/peppers/death_spiral.jpg"
   },
   {
     "id": 7,
-    "name": "Poblano Pepper",
-    "description": "Mild with a rich flavor, great for stuffing.",
-    "price": 2.29,
-    "image": "https://example.com/images/poblano.jpg"
+    "name": "Fish Pepper",
+    "description": "An heirloom pepper with striking variegated foliage and a moderate heat level, historically used in seafood dishes.",
+    "price": 6.99,
+    "scovilleScale": 5000,
+    "image": "/images/peppers/fish.jpg"
   },
   {
     "id": 8,
-    "name": "Anaheim Pepper",
-    "description": "Mild and sweet, great for roasting.",
-    "price": 1.89,
-    "image": "https://example.com/images/anaheim.jpg"
+    "name": "Habanero Mustard Pepper",
+    "description": "A mustard-colored habanero pepper with a fruity, tropical flavor and intense heat.",
+    "price": 9.49,
+    "scovilleScale": 325000,
+    "image": "/images/peppers/habanero_mustard.jpg"
   },
   {
     "id": 9,
-    "name": "Chipotle Pepper",
-    "description": "Smoked jalapeño with a unique flavor.",
-    "price": 2.99,
-    "image": "https://example.com/images/chipotle.jpg"
+    "name": "Hatch Green Chile Pepper",
+    "description": "A popular New Mexican pepper known for its mild heat and earthy flavor.",
+    "price": 6.49,
+    "scovilleScale": 5000,
+    "image": "/images/peppers/hatch_green_chile.jpg"
   },
   {
     "id": 10,
-    "name": "Thai Chili Pepper",
-    "description": "Small but packs a lot of heat.",
-    "price": 2.49,
-    "image": "https://example.com/images/thai-chili.jpg"
+    "name": "Jay's Peach Ghost Scorpion Pepper",
+    "description": "A super-hot pepper with a unique peach color and an extreme fiery heat level.",
+    "price": 13.99,
+    "scovilleScale": 1200000,
+    "image": "/images/peppers/jay's_peach_ghost_scorpion.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Jimmy Nardello Pepper",
+    "description": "A sweet, thin-skinned pepper often used for frying, with a mild, sweet taste.",
+    "price": 5.99,
+    "scovilleScale": 100,
+    "image": "/images/peppers/jimmy_nardello.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Lesya Pepper",
+    "description": "A Ukrainian heirloom sweet pepper with a robust, rich flavor and no heat.",
+    "price": 6.49,
+    "scovilleScale": 0,
+    "image": "/images/peppers/lesya.jpg"
+  },
+  {
+    "id": 13,
+    "name": "MOA Scotch Bonnet Pepper",
+    "description": "A Caribbean hot pepper with a fruity flavor and intense heat, perfect for jerk seasoning.",
+    "price": 10.99,
+    "scovilleScale": 350000,
+    "image": "/images/peppers/moa_scotch_bonnet.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Olive Nagabrains Pepper",
+    "description": "A super-hot pepper with an olive-green hue and a fruity flavor, extremely rare.",
+    "price": 14.49,
+    "scovilleScale": 1000000,
+    "image": "/images/peppers/olive_nagabrains.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Paradeisfruchtiger Pepper",
+    "description": "A sweet and tangy pepper from Austria, often used in salads and fresh dishes.",
+    "price": 7.99,
+    "scovilleScale": 0,
+    "image": "/images/peppers/paradeisfruchtiger.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pimenta Da Neyde Pepper",
+    "description": "A striking, dark purple pepper with a smoky, fruity flavor and high heat.",
+    "price": 12.99,
+    "scovilleScale": 400000,
+    "image": "/images/peppers/pimenta_da_neyde.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Purple Beauty Bell Pepper",
+    "description": "A stunning, deep purple bell pepper with a sweet, mild flavor and no heat.",
+    "price": 5.49,
+    "scovilleScale": 0,
+    "image": "/images/peppers/purple_beauty_bell.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Purple Reaper Pepper",
+    "description": "A purple variant of the Carolina Reaper, known for its intense heat and unique color.",
+    "price": 15.99,
+    "scovilleScale": 2000000,
+    "image": "/images/peppers/purple_reaper.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Snow White SLP Pepper",
+    "description": "A creamy, white pepper with a mild heat and a sweet, fruity flavor.",
+    "price": 7.49,
+    "scovilleScale": 10000,
+    "image": "/images/peppers/snow_white_slp.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Sugar Rush Stripey Pepper",
+    "description": "A sweet and fruity pepper with unique yellow and red striping and moderate heat.",
+    "price": 9.99,
+    "scovilleScale": 50000,
+    "image": "/images/peppers/sugar_rush_stripey.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Trinidad Moruga Scorpion Pepper",
+    "description": "One of the hottest peppers in the world, with a fruity flavor and intense heat.",
+    "price": 15.49,
+    "scovilleScale": 2000000,
+    "image": "/images/peppers/trinidad_moruga_scorpion.jpg"
   }
 ]

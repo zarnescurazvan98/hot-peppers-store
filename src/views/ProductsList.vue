@@ -1,29 +1,21 @@
 <template>
-  <div class="p-6">
-    <h1 class="text-3xl font-bold mb-4">Our Products</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <ProductCard
-          v-for="product in products"
-          :key="product.id"
-          :product="product"
-      />
+  <div class="p-6 bg-gray-50 min-h-screen">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Our Products</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <ProductCard v-for="product in products" :key="product.id" :product="product" />
     </div>
   </div>
 </template>
 
 <script>
 import ProductCard from '../components/ProductCard.vue';
-import products from '../assets/products.json'; // Assuming you're fetching products from this file
+import products from '../assets/products.json';
 
 export default {
   name: 'ProductList',
-  components: {
-    ProductCard,
-  },
+  components: {ProductCard},
   data() {
-    return {
-      products,
-    };
+    return {products};
   },
 };
 </script>

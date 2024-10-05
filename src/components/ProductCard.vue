@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-200 flex flex-col h-full transform hover:scale-105">
+  <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-200 flex flex-col h-full transform hover:scale-105 transition-transform">
     <div class="relative">
       <img :src="product.image" alt="Product Image" class="w-full h-56 object-cover rounded-t-lg">
       <div class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md">

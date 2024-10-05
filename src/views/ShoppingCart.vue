@@ -1,44 +1,49 @@
 <template>
   <div class="cart-page p-6 bg-gray-50 min-h-screen">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4">Your Cart</h1>
-    <div v-if="cartItems.length > 0">
-      <div v-for="item in cartItems" :key="item.id" class="border-b py-4 flex items-center">
-        <img :src="item.image" alt="Product Image" class="w-16 h-16 object-cover rounded-lg mr-4">
-        <div class="flex-1">
-          <h2 class="text-lg font-bold text-gray-800">{{ item.name }}</h2>
-          <p class="text-gray-600">Price: ${{ item.price.toFixed(2) }} each</p>
-          <p class="text-gray-600">Subtotal: ${{ (item.price * item.quantity).toFixed(2) }}</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Your Cart</h1>
 
-          <div class="mt-2 flex items-center">
-            <label for="quantity-{{ item.id }}" class="text-sm font-medium text-gray-700">Quantity:</label>
-            <select
-                v-model="item.quantity"
-                @change="updateQuantity(item.id, item.quantity)"
-                id="quantity-{{ item.id }}"
-                class="ml-2 block w-20 border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500"
-            >
-              <option v-for="number in quantities" :key="number" :value="number">{{ number }}</option>
-            </select>
-          </div>
+    <div v-if="cartItems.length > 0">
+      <div v-for="item in cartItems" :key="item.id" class="flex items-center justify-between border-b py-6">
+        <img :src="item.image" alt="Product Image" class="w-20 h-20 object-cover rounded-lg shadow-md">
+
+        <div class="flex-1 px-4">
+          <h2 class="text-xl font-semibold text-gray-800">{{ item.name }}</h2>
+          <p class="text-sm text-gray-600">Price: ${{ item.price.toFixed(2) }} each</p>
+          <p class="text-sm text-gray-600">Subtotal: ${{ (item.price * item.quantity).toFixed(2) }}</p>
         </div>
 
-        <button @click="removeFromCart(item.id)" class="bg-red-500 text-white py-1 px-4 ml-4 rounded-lg hover:bg-red-600 transition">
-          Remove
+        <!-- Custom Dropdown for Quantity -->
+        <div class="relative w-20">
+          <CustomDropdown v-model="item.quantity" :options="quantities" />
+        </div>
+
+        <button @click="removeFromCart(item.id)" class="flex items-center justify-center bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition">
+          <i class="fas fa-trash-alt"></i>
         </button>
       </div>
 
-      <h3 class="text-xl font-bold mt-6 text-gray-800">Total: ${{ cartTotal.toFixed(2) }}</h3>
-      <button class="mt-4 w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">
-        Proceed to Checkout
-      </button>
+      <div class="mt-6 text-right">
+        <h3 class="text-2xl font-bold text-gray-800">Total: ${{ cartTotal.toFixed(2) }}</h3>
+        <button class="mt-4 w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition flex items-center justify-center">
+          <i class="fas fa-credit-card mr-2"></i> Proceed to Checkout
+        </button>
+      </div>
     </div>
-    <p v-else class="text-gray-700">Your cart is empty</p>
+
+    <p v-else class="text-lg text-gray-600 mt-10 flex items-center justify-center">
+      <i class="fas fa-shopping-cart text-4xl text-gray-300 mr-4"></i> Your cart is empty
+    </p>
   </div>
 </template>
 
 <script>
+import CustomDropdown from '../components/CustomDropdown.vue';
+
 export default {
   name: 'ShoppingCart',
+  components: {
+    CustomDropdown,
+  },
   computed: {
     cartItems() {
       return this.$store.getters.cartItems;
@@ -47,7 +52,7 @@ export default {
       return this.$store.getters.cartTotal;
     },
     quantities() {
-      return Array.from({length: 10}, (_, i) => i + 1);
+      return Array.from({ length: 10 }, (_, i) => i + 1);
     },
   },
   methods: {
@@ -55,7 +60,7 @@ export default {
       this.$store.dispatch('removeProduct', productId);
     },
     updateQuantity(productId, newQuantity) {
-      this.$store.dispatch('updateProductQuantity', {productId, quantity: newQuantity});
+      this.$store.dispatch('updateProductQuantity', { productId, quantity: newQuantity });
     },
   },
 };

@@ -12,10 +12,8 @@
           <p class="text-sm text-gray-600">Subtotal: ${{ (item.price * item.quantity).toFixed(2) }}</p>
         </div>
 
-        <!-- Custom Dropdown for Quantity -->
-        <div class="relative w-20">
-          <CustomDropdown v-model="item.quantity" :options="quantities" />
-        </div>
+        <!-- Use QuantitySelector component here -->
+        <QuantitySelector v-model="item.quantity" @update:modelValue="updateQuantity(item.id, $event)" />
 
         <button @click="removeFromCart(item.id)" class="flex items-center justify-center bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition">
           <i class="fas fa-trash-alt"></i>
@@ -37,12 +35,12 @@
 </template>
 
 <script>
-import CustomDropdown from '../components/CustomDropdown.vue';
+import QuantitySelector from '../components/QuantitySelector.vue';
 
 export default {
   name: 'ShoppingCart',
   components: {
-    CustomDropdown,
+    QuantitySelector,
   },
   computed: {
     cartItems() {
@@ -50,9 +48,6 @@ export default {
     },
     cartTotal() {
       return this.$store.getters.cartTotal;
-    },
-    quantities() {
-      return Array.from({ length: 10 }, (_, i) => i + 1);
     },
   },
   methods: {

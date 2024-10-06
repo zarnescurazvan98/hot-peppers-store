@@ -18,10 +18,10 @@
         <span class="text-sm text-gray-500"><i class="fas fa-fire text-red-500"></i> {{ product.scovilleScale.toLocaleString() }} SHU</span>
       </div>
 
-      <!-- Custom Dropdown for Quantity -->
+      <!-- Use QuantitySelector component here -->
       <div class="mt-4">
         <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity:</label>
-        <CustomDropdown v-model="selectedQuantity" :options="quantities" />
+        <QuantitySelector v-model="selectedQuantity" />
       </div>
 
       <button @click="addToCart" class="mt-4 w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition duration-200 flex items-center justify-center">
@@ -32,12 +32,12 @@
 </template>
 
 <script>
-import CustomDropdown from '../components/CustomDropdown.vue';
+import QuantitySelector from '../components/QuantitySelector.vue';
 
 export default {
   name: 'ProductCard',
   components: {
-    CustomDropdown,
+    QuantitySelector,
   },
   props: {
     product: {
@@ -48,7 +48,6 @@ export default {
   data() {
     return {
       selectedQuantity: 1,
-      quantities: Array.from({ length: 10 }, (_, i) => i + 1),
     };
   },
   methods: {

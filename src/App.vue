@@ -11,8 +11,8 @@
       </div>
     </header>
 
-    <main class="flex-grow overflow-y-auto pt-20 pb-16">
-      <router-view></router-view>
+    <main class="flex-grow overflow-y-auto pt-16 pb-16">
+      <router-view @show-toast="showToast"></router-view>
     </main>
 
     <footer class="bg-gray-800 text-white py-4">
@@ -20,13 +20,36 @@
         <p>&copy; 2024 Hot Peppers Store. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Toast Notification -->
+    <ToastNotification v-if="toastVisible" :product="toastProduct" :quantity="toastQuantity" />
   </div>
 </template>
 
 <script>
-export default { name: 'App' };
-</script>
+import ToastNotification from './components/ToastNotification.vue';
 
-<style>
-body { margin: 0; }
-</style>
+export default {
+  name: 'App',
+  components: {
+    ToastNotification,
+  },
+  data() {
+    return {
+      toastVisible: false,
+      toastProduct: null,
+      toastQuantity: null,
+    };
+  },
+  methods: {
+    showToast(product, quantity) {
+      this.toastProduct = product;
+      this.toastQuantity = quantity;
+      this.toastVisible = true;
+      setTimeout(() => {
+        this.toastVisible = false;
+      }, 1000); // Hide after 1 seconds
+    },
+  },
+};
+</script>

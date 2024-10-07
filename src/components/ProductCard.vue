@@ -18,7 +18,6 @@
         <span class="text-sm text-gray-500"><i class="fas fa-fire text-red-500"></i> {{ product.scovilleScale.toLocaleString() }} SHU</span>
       </div>
 
-      <!-- Use QuantitySelector component here -->
       <div class="mt-4">
         <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity:</label>
         <QuantitySelector v-model="selectedQuantity" />
@@ -54,6 +53,7 @@ export default {
     addToCart() {
       const productWithQuantity = { ...this.product, quantity: this.selectedQuantity };
       this.$store.dispatch('addProduct', productWithQuantity);
+      this.$emit('show-toast', this.product, this.selectedQuantity);
     },
   },
 };

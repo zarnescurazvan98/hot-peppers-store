@@ -3,7 +3,12 @@
     <h1 class="text-4xl font-bold text-gray-800 mb-6">Explore Our Hot Peppers</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-      <ProductCard v-for="product in products" :key="product.id" :product="product" />
+      <ProductCard
+          v-for="product in products"
+          :key="product.id"
+          :product="product"
+          @show-toast="forwardToast"
+      />
     </div>
   </div>
 </template>
@@ -19,6 +24,12 @@ export default {
     return {
       products,
     };
+  },
+  methods: {
+    forwardToast(product, quantity) {
+      // Forward the event to App.vue
+      this.$emit('show-toast', product, quantity);
+    },
   },
 };
 </script>

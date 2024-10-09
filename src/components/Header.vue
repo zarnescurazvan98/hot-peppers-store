@@ -24,8 +24,10 @@
         <router-link to="/cart" class="relative px-4 py-2 hover:bg-green-500 rounded-md transition flex items-center space-x-1">
           <i class="fas fa-shopping-cart"></i>
           <span>Cart</span>
-          <!-- Cart Counter (just for display now) -->
-          <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
+          <!-- Cart Counter (dynamic) -->
+          <span v-if="cartCount > 0" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+            {{ cartCount }}
+          </span>
         </router-link>
       </nav>
     </div>
@@ -33,7 +35,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'HeaderComponent',
+  computed: {
+    ...mapGetters(['cartCount']), // Use cartCount getter
+  },
 };
 </script>

@@ -1,4 +1,3 @@
-// store/modules/cart.js
 const state = {
     cartItems: [],
 };
@@ -7,6 +6,8 @@ const getters = {
     cartItems: (state) => state.cartItems,
     cartTotal: (state) =>
         state.cartItems.reduce((total, item) => total + item.price * item.quantity, 0),
+    cartCount: (state) =>
+        state.cartItems.reduce((total, item) => total + item.quantity, 0), // Total number of items in the cart
 };
 
 const mutations = {

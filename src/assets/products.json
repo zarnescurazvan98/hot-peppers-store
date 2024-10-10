@@ -5,7 +5,7 @@
     "description": "A tiny, fiery pepper known as the 'mother of all peppers' in Peru, used for its intense heat and citrusy flavor.",
     "price": 12.99,
     "scovilleScale": 30000,
-    "image": "/images/peppers/aji_charapita.jpg"
+    "image": "./images/peppers/aji_charapita.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "A mild, fruity pepper with a sweet and citrusy flavor, commonly grown in Finland.",
     "price": 9.99,
     "scovilleScale": 5000,
-    "image": "/images/peppers/aji_fantasy.jpg"
+    "image": "./images/peppers/aji_fantasy.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "A rare, visually striking pepper with a sweet, fruity flavor and medium heat.",
     "price": 14.99,
     "scovilleScale": 50000,
-    "image": "/images/peppers/black_panther_orange.jpg"
+    "image": "./images/peppers/black_panther_orange.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "A beautiful, vibrant purple cayenne-type pepper that turns red when mature, with a medium heat.",
     "price": 8.99,
     "scovilleScale": 30000,
-    "image": "/images/peppers/buena_mulata.jpg"
+    "image": "./images/peppers/buena_mulata.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "A variegated sweet pepper with stripes, providing a crunchy, sweet taste.",
     "price": 7.99,
     "scovilleScale": 5000,
-    "image": "/images/peppers/candy_cane.jpg"
+    "image": "./images/peppers/candy_cane.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "A wickedly hot pepper with a bumpy texture and extreme heat, originating from the UK.",
     "price": 15.99,
     "scovilleScale": 1500000,
-    "image": "/images/peppers/death_spiral.jpg"
+    "image": "./images/peppers/death_spiral.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "An heirloom pepper with striking variegated foliage and a moderate heat level, historically used in seafood dishes.",
     "price": 6.99,
     "scovilleScale": 5000,
-    "image": "/images/peppers/fish.jpg"
+    "image": "./images/peppers/fish.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "description": "A mustard-colored habanero pepper with a fruity, tropical flavor and intense heat.",
     "price": 9.49,
     "scovilleScale": 325000,
-    "image": "/images/peppers/habanero_mustard.jpg"
+    "image": "./images/peppers/habanero_mustard.jpg"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "A popular New Mexican pepper known for its mild heat and earthy flavor.",
     "price": 6.49,
     "scovilleScale": 5000,
-    "image": "/images/peppers/hatch_green_chile.jpg"
+    "image": "./images/peppers/hatch_green_chile.jpg"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "A super-hot pepper with a unique peach color and an extreme fiery heat level.",
     "price": 13.99,
     "scovilleScale": 1200000,
-    "image": "/images/peppers/jay's_peach_ghost_scorpion.jpg"
+    "image": "./images/peppers/jay's_peach_ghost_scorpion.jpg"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "A sweet, thin-skinned pepper often used for frying, with a mild, sweet taste.",
     "price": 5.99,
     "scovilleScale": 100,
-    "image": "/images/peppers/jimmy_nardello.jpg"
+    "image": "./images/peppers/jimmy_nardello.jpg"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "description": "A Ukrainian heirloom sweet pepper with a robust, rich flavor and no heat.",
     "price": 6.49,
     "scovilleScale": 0,
-    "image": "/images/peppers/lesya.jpg"
+    "image": "./images/peppers/lesya.jpg"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "description": "A Caribbean hot pepper with a fruity flavor and intense heat, perfect for jerk seasoning.",
     "price": 10.99,
     "scovilleScale": 350000,
-    "image": "/images/peppers/moa_scotch_bonnet.jpg"
+    "image": "./images/peppers/moa_scotch_bonnet.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "description": "A super-hot pepper with an olive-green hue and a fruity flavor, extremely rare.",
     "price": 14.49,
     "scovilleScale": 1000000,
-    "image": "/images/peppers/olive_nagabrains.jpg"
+    "image": "./images/peppers/olive_nagabrains.jpg"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "description": "A sweet and tangy pepper from Austria, often used in salads and fresh dishes.",
     "price": 7.99,
     "scovilleScale": 0,
-    "image": "/images/peppers/paradeisfruchtiger.jpg"
+    "image": "./images/peppers/paradeisfruchtiger.jpg"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "description": "A striking, dark purple pepper with a smoky, fruity flavor and high heat.",
     "price": 12.99,
     "scovilleScale": 400000,
-    "image": "/images/peppers/pimenta_da_neyde.jpg"
+    "image": "./images/peppers/pimenta_da_neyde.jpg"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "description": "A stunning, deep purple bell pepper with a sweet, mild flavor and no heat.",
     "price": 5.49,
     "scovilleScale": 0,
-    "image": "/images/peppers/purple_beauty_bell.jpg"
+    "image": "./images/peppers/purple_beauty_bell.jpg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "description": "A purple variant of the Carolina Reaper, known for its intense heat and unique color.",
     "price": 15.99,
     "scovilleScale": 2000000,
-    "image": "/images/peppers/purple_reaper.jpg"
+    "image": "./images/peppers/purple_reaper.jpg"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "description": "A creamy, white pepper with a mild heat and a sweet, fruity flavor.",
     "price": 7.49,
     "scovilleScale": 10000,
-    "image": "/images/peppers/snow_white_slp.jpg"
+    "image": "./images/peppers/snow_white_slp.jpg"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "description": "A sweet and fruity pepper with unique yellow and red striping and moderate heat.",
     "price": 9.99,
     "scovilleScale": 50000,
-    "image": "/images/peppers/sugar_rush_stripey.jpg"
+    "image": "./images/peppers/sugar_rush_stripey.jpg"
   },
   {
     "id": 21,
@@ -165,6 +165,6 @@
     "description": "One of the hottest peppers in the world, with a fruity flavor and intense heat.",
     "price": 15.49,
     "scovilleScale": 2000000,
-    "image": "/images/peppers/trinidad_moruga_scorpion.jpg"
+    "image": "./images/peppers/trinidad_moruga_scorpion.jpg"
   }
 ]

@@ -28,15 +28,18 @@
       </div>
     </section>
 
-    <!-- Categories Section -->
+    <!-- Pepper Heat Levels Section -->
     <section class="py-10 bg-white">
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Shop by Category</h2>
-        <div class="flex justify-center space-x-8">
-          <router-link to="/shop?category=mild" class="bg-yellow-500 text-white py-3 px-6 rounded-full hover:bg-yellow-600 transition">Mild Peppers</router-link>
-          <router-link to="/shop?category=hot" class="bg-orange-500 text-white py-3 px-6 rounded-full hover:bg-orange-600 transition">Hot Peppers</router-link>
-          <router-link to="/shop?category=superhot" class="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-700 transition">Super Hot Peppers</router-link>
-        </div>
+        <h2 class="text-4xl font-bold mb-6">Pepper Heat Levels</h2>
+        <p class="text-lg text-gray-600 mb-6">Not all peppers are created equal! Here's a breakdown of the heat levels of the peppers we offer, based on the Scoville Heat Units (SHU).</p>
+        <ul class="text-lg text-gray-600 space-y-4">
+          <li><strong>Mild Peppers:</strong> 100 - 2,500 SHU (e.g., Bell Peppers, Hatch Green Chiles)</li>
+          <li><strong>Medium Heat Peppers:</strong> 2,500 - 25,000 SHU (e.g., Jalapeños, Poblano Peppers)</li>
+          <li><strong>Hot Peppers:</strong> 25,000 - 100,000 SHU (e.g., Cayenne, Serrano Peppers)</li>
+          <li><strong>Very Hot Peppers:</strong> 100,000 - 350,000 SHU (e.g., Habanero, Scotch Bonnet)</li>
+          <li><strong>Super Hot Peppers:</strong> 350,000 - 2,200,000 SHU (e.g., Carolina Reaper, Ghost Pepper)</li>
+        </ul>
       </div>
     </section>
 

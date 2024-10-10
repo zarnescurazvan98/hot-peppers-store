@@ -1,7 +1,7 @@
 <template>
   <div class="homepage">
     <!-- Hero Section -->
-    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('/images/banner_hot_peppers.jpeg')">
+    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('./images/banner_hot_peppers.jpeg')">
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="relative z-5 text-center text-white p-10">
         <h1 class="text-5xl font-bold mb-4">Spice Up Your Life with Our Hottest Peppers!</h1>
